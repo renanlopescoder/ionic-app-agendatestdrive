@@ -1,0 +1,20 @@
+.background-login{
+  background: url(../img/car.jpg) center; 
+  background-size: cover;
+}
+
+.btn-main{
+  border-radius: 40px;
+  width: 80%!important;
+  margin: 0 auto ;
+  background-color: rgba(250,150,50,.9)!important;
+}
+
+.theme-yellow{
+  background-color: rgb(250,150,50)!important;
+  border-color: rgb(250,150,50)!important;
+}
+
+.falha{
+  color: red!important;
+}

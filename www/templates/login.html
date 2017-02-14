@@ -1,0 +1,26 @@
+<ion-view class="background-login">
+	<ion-content>
+		<div class="list card">
+			<div class="item">
+				<h2>Sobre o Projeto</h2>
+				<h3>Front-End desenvolvido por Renan Lopes</h3>
+			</div>
+			<div class="item item-body">
+				<p>Projeto desenvolvido junto ao Curso ionic Parte 2 da Alura com AngularJS v1.x e Ionic v1. Back-End via rest foi fornecido pela Alura e os dados de login são: joao@alura.com.br e senha alura123</p>
+			</div>
+		</div>
+		<form ng-submit="realizarLogin()">
+			<div class="list list-inset">
+				<label class="item item-input">
+					<span class="input-label">Email</span>
+					<input type="text" ng-model="login.email" value="joao@alura.com.br">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Senha</span>
+					<input type="password" ng-model="login.senha" value="alura123">
+				</label>
+			</div>
+			<button class="button button-block button-positive btn-main" type="submit" >Entrar</button>
+		</form>
+	</ion-content>
+</ion-view>

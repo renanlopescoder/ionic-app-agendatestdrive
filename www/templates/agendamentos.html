@@ -1,0 +1,9 @@
+<ion-view cache-view="false" view-title="Agendamentos">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-class="{'falha' : agendamento.confirmado == 'false'}" ng-repeat="agendamento in agendamentos">{{agendamento.modelo}} - {{agendamento.preco | finance:true:2}}
+        <ion-option-button ng-hide="agendamento.confirmado == 'true'" class="button-positive theme-yellow icon ion-paper-airplane" ng-click="reenviar(agendamento)"></ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,28 @@
+<ion-view view-title="Perfil">
+  <ion-content>
+    <div class="list card">
+      <div class="item item-avatar">
+        <img ng-src="{{caminhoFoto}}" alt="Profile Picture">
+        <h2>{{usuarioLogado.nome}}</h2>
+        <button class="button button-full button-dark theme-yellow" ng-show="editando" ng-click="tirarFoto()">Tirar foto</button>
+      </div>
+      <div class="item item-body">
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label" ng-show="!editando">{{usuarioLogado.dataNascimento}}</span>
+            <input type="text" ng-model="usuarioLogado.dataNascimento" ng-show="editando">
+          </label>
+          <label class="item item-input">
+            <span class="input-label" ng-show="!editando">{{usuarioLogado.telefone | brPhoneNumber}}</span>
+            <input type="text" ng-model="usuarioLogado.telefone" ng-show="editando">
+          </label>
+          <label class="item item-input">
+            <span class="input-label" ng-show="!editando">{{usuarioLogado.email}}</span>
+            <input type="text" ng-model="usuarioLogado.email" ng-show="editando">
+          </label>
+          <button class="button button-full button-dark theme-yellow" ng-click="acaoBotao()">{{textoBotao}}</button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
